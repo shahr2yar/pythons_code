@@ -12,7 +12,7 @@ r.append(float(r3))
 
 m_b=10251.474427
 rr=sqrt(r[0]**2+r[1]**2+r[2]**2)
-
+print('hi\n')
 #physical constant
 #g=6.67408e-11 #m**3/(kg*s**2)
 #g=0.004498 #pc**3/(m_sun*Myr**2) or kpc**3/(1e9*m_sun*Myr**2)
