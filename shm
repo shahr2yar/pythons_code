@@ -1,0 +1,18 @@
+i=1
+while [ $i -le 1002 ]
+do
+	if [ $i -lt 10 ]
+	then
+		./dumpdmparts.x -inp "./output_0000$i" -out "data/list0000$i.dat"
+	elif [ $i -lt 100 ]
+	then
+		./dumpdmparts.x -inp "./output_000$i" -out "data/list000$i.dat"
+	elif [ $i -lt 1000 ]
+	then
+		./dumpdmparts.x -inp "./output_00$i" -out "data/list00$i.dat"
+	else
+		./dumpdmparts.x -inp "./output_0$i" -out "data/list0$i.dat"
+	fi
+	i=`expr $i + 1`
+done
+
